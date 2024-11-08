@@ -73,8 +73,9 @@ nav a {
 .articles {
   text-align: center;
   margin: 40px 0;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
 }
 .articles h2 {
   font-family: "New York Extra Large", sans-serif;
@@ -119,7 +120,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
+  margin-top: 111px;
 }
 footer p {
   margin: 5px 0;
@@ -139,8 +140,7 @@ hr {
   height: 2px; /* Đặt độ dày cho đường gạch */
   background-color: black; /* Màu sắc của đường gạch */
   margin: 20px 0; /* Khoảng cách trên và dưới */
-  width: 30%;
-  margin-left: 650px;
+  width: 100%;
 }
 .light {
   color: gray; /* Màu nhạt cho chữ */
@@ -179,8 +179,7 @@ nav a:first-child {
   font-weight: 700;
   line-height: 54px;
   text-align: center;
-  margin-left: 291px;
-  margin-right: 291px;
+  margin: 0 auto;
 }
 .heros img {
   width: 100vw;
@@ -199,9 +198,12 @@ nav a:first-child {
   align-items: center;
   margin-bottom: 20px;
   margin-left: 150px;
+  justify-content: space-between;
 }
 .sub_author {
   display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .sub_author img {
   width: 140px;
@@ -214,8 +216,8 @@ nav a:first-child {
   text-align: left;
 }
 .social-icons {
-  margin-left: auto; /* Đẩy phần social-icons sang bên phải */
-  margin-right: 150px;
+  width: 140px;
+  height: 44px;
 }
 .social-icons__mobile {
   display: none;
@@ -273,6 +275,7 @@ nav a:first-child {
   line-height: 51.2px;
   text-align: left;
 }
+
 .image-container img {
   width: 854px;
   height: 570px;
@@ -309,7 +312,6 @@ nav a:first-child {
 .image-container img {
   width: 854px;
   height: 570px;
-  margin-top: 30px;
 }
 .image-container {
   font-family: "SF Pro Display", sans-serif;
@@ -320,9 +322,9 @@ nav a:first-child {
 }
 .image-container p {
   font-family: "New York Medium", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400px;
-  line-height: 34px;
+  line-height: 25.6px;
 }
 .image-container ul li {
   font-family: "New York Medium", sans-serif;
@@ -333,8 +335,8 @@ nav a:first-child {
 .social-share {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
-  padding: 10px;
+  margin-top: 77px;
+  margin-bottom: 32px;
   border: 1px solid #ddd;
   border-radius: 4px;
   width: 640px;
@@ -362,6 +364,7 @@ nav a:first-child {
 .tags {
   margin: 20px 0;
   text-align: left;
+  margin-bottom: 32px;
 }
 .tags a {
   color: #333;
@@ -413,8 +416,8 @@ nav a:first-child {
   justify-content: center;
 }
 .social-icons a img {
-  width: 29.62px !important;
-  height: 16px !important;
+  width: 20px !important;
+  height: 20px !important;
   margin-top: 5px;
 }
 .share_mobile {
@@ -422,7 +425,7 @@ nav a:first-child {
 }
 .divider {
   width: 2px;
-  height: 80px;
+  height: 100%;
   background-color: #ddd;
   margin: 0 10px;
   border: 1px;
@@ -498,11 +501,11 @@ nav a:first-child {
 }
 .containers h1 {
   font-family: "New York Extra Large", sans-serif;
-  font-size: 66px;
+  font-size: 44px;
   line-height: 28px;
   font-weight: 700px;
   text-align: center;
-  margin-top: 40.07px;
+  margin-top: 73px;
 }
 h1 {
   font-size: 2em;
@@ -533,7 +536,8 @@ h1 {
 .newsletter {
   border: 1px solid #000;
   padding: 20px;
-  margin: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 640px;
   height: 313px;
   margin-top: 114px;
@@ -578,6 +582,10 @@ h1 {
   position: relative;
   margin-top: 136px;
 }
+.heros h2 {
+  max-width: 858px;
+  text-align: center;
+}
 .dividers .line {
   flex-grow: 0;
   height: 4px;
@@ -616,24 +624,24 @@ h1 {
 .authors {
   display: flex;
   align-items: center;
+  gap: 23px;
 }
 .authors img {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-right: 15px;
 }
 .author-text {
   font-size: 16px;
   line-height: 1.5;
 }
-.author-info strong {
+.author-info span {
   font-weight: bold;
   text-align: left;
 }
 .author-info p {
   margin: 0;
-  margin-left: 50px;
+  text-align: left;
 }
 .author-info .auth {
   font-family: SF Pro Text;
@@ -648,11 +656,18 @@ h1 {
 hr {
   background-color: black;
   border: 3px;
-  margin-left: 500px;
 }
-.image-container img {
-  margin-left: -44px;
+
+.images {
+  max-width: 854px;
+  margin: 0 auto;
 }
+.dot {
+  border-top: 2px dotted black;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
 @media (max-width: 768px) {
   .header {
     font-size: 64px;
@@ -679,6 +694,9 @@ hr {
   }
   .font-description {
     font-size: 18px;
+  }
+  .footer {
+    margin-top: 111px;
   }
   /* |-----------------------
     -| Listing
@@ -735,8 +753,11 @@ hr {
     width: 100%;
   }
   .articles {
-    text-align: center;
-    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
   }
   .article-row {
     display: grid;
@@ -775,11 +796,11 @@ hr {
   .heros h2 {
     font-family: "New York Extra Large", sans-serif;
     font-size: 36px;
-    margin: 20px 10px 24px;
-    width: 400px;
+    width: 335px;
     line-height: 42.96px;
     text-align: center;
     margin-left: 15px;
+    margin: 0 auto;
   }
   .heros p {
     font-family: "SF Mono";
@@ -797,10 +818,11 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 32px;
   }
   .authors {
     display: flex;
-
+    margin-top: 32px;
     align-items: center;
   }
   .authors img {
@@ -881,6 +903,7 @@ hr {
   }
   .content1_mobile {
     display: block;
+    margin-top: 30px;
   }
   .content1_mobile p:nth-child(1) {
     width: 350px;
@@ -977,7 +1000,7 @@ hr {
   }
   .dot {
     border-top: 2px dotted black;
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
   }
   .dividers {
@@ -1001,11 +1024,12 @@ hr {
     height: 64.29px;
   }
   .containers h1 {
-    font-family: N "ew York Extra Large";
+    font-family: "New York Extra Large";
     font-size: 32px;
     font-weight: 700;
     line-height: 38.19px;
     text-align: center;
+    margin-top: 62px;
   }
   .grid {
     display: grid;
@@ -1082,5 +1106,49 @@ hr {
     padding: 20px 0;
     margin-top: 40px;
     margin-right: -35px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 911px) {
+  */ header {
+    height: 65px;
+  }
+  header img {
+    width: 217px;
+  }
+  header h1 {
+    margin-left: 24px;
+  }
+  nav {
+    display: none;
+  }
+  header .img_nav__mobile {
+    display: block;
+    padding: 27px 40px 24px;
+    /* height: 60px; */
+  }
+  header .img_nav__mobile img {
+    width: 27px;
+  }
+  .heros h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heros img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .containers h1 {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+  .newsletter {
+    width: 640px;
+    height: 313px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer {
+    margin-top: 111px;
   }
 }
