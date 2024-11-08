@@ -1,0 +1,1086 @@
+@import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+@import url("https://fonts.cdnfonts.com/css/nokia-cellphone-fc");
+@import url("https://fonts.cdnfonts.com/css/harriet-text");
+@import url("https://fonts.cdnfonts.com/css/bricolage-grotesque");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
+@import url("https://fonts.cdnfonts.com/css/gurnie");
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* listing */
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: white; /* Đảm bảo nền header không bị lẫn với nội dung bên dưới */
+  z-index: 1000; /* Đảm bảo header nằm trên các thành phần khác */
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Đẩy `nav` sang bên phải */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ nếu cần */
+  height: 134px;
+}
+
+header .img_nav__mobile {
+  display: none;
+}
+nav {
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+nav a {
+  margin: 0 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 0px;
+  font-family: "Gurnie", sans-serif;
+}
+.hero {
+  text-align: center;
+  margin: 40px 0;
+  margin-top: 150px;
+  width: 100vw;
+}
+.hero img {
+  width: 854px;
+  height: 533px;
+}
+.hero h2 {
+  font-family: "New York Extra Large", sans-serif;
+  font-size: 54px;
+  margin: 20px 0 10px;
+  width: 800px;
+  margin-left: 560px;
+}
+.hero p {
+  font-size: 20px;
+  color: #777;
+  font-family: "SF Mono", sans-serif;
+}
+.articles {
+  text-align: center;
+  margin: 40px 0;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+.articles h2 {
+  font-family: "New York Extra Large", sans-serif;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.article h3 {
+  font-family: "SF Pro Display", sans-serif;
+  line-height: 26.4px;
+  font-size: 22px;
+  text-align: center;
+}
+.article-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.article {
+  width: 48%; /* Giữ độ rộng là 48% */
+  text-align: center;
+  margin-right: 1%; /* Thêm khoảng cách giữa các ảnh */
+  margin-top: -36px;
+}
+.article:last-child {
+  margin-right: 0; /* Bỏ khoảng cách bên phải cho ảnh cuối cùng */
+}
+.article img {
+  width: 304px; /* Đặt chiều rộng ảnh là 100% */
+  height: 176px; /* Chiều cao tự động để giữ tỉ lệ */
+  object-fit: cover;
+  margin-left: 20px;
+  margin-top: 78px;
+}
+
+.article p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+footer p {
+  margin: 5px 0;
+  margin-top: 64px;
+}
+footer h5 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+hr {
+  border: none; /* Bỏ các đường viền mặc định */
+  height: 2px; /* Đặt độ dày cho đường gạch */
+  background-color: black; /* Màu sắc của đường gạch */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+  width: 30%;
+  margin-left: 650px;
+}
+.light {
+  color: gray; /* Màu nhạt cho chữ */
+  font-weight: normal; /* Chữ không đậm */
+  margin-left: 20px;
+}
+
+.bold {
+  font-weight: bold; /* Chữ đậm */
+}
+nav a:first-child {
+  border-bottom: 2px solid #333; /* Thêm gạch chân dưới `BLOG` */
+  padding-bottom: 5px; /* Thêm khoảng cách giữa chữ và gạch chân */
+}
+
+.social-links {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.social-links span {
+  text-decoration: underline; /* Gạch chân từng chữ */
+}
+
+.social-links span + span {
+  margin-left: 5px; /* Tạo khoảng cách giữa các chữ nếu cần */
+}
+
+/* article */
+.heros {
+  margin-top: 150px;
+}
+.heros h2 {
+  font-family: "New York Extra Large";
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  margin-left: 291px;
+  margin-right: 291px;
+}
+.heros img {
+  width: 100vw;
+  height: 900px;
+  margin-top: 52px;
+}
+.heros p {
+  font-family: "SF Mono";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+.sub_author {
+  display: flex;
+}
+.sub_author img {
+  width: 140px;
+  height: 44px;
+
+  gap: 0px;
+  opacity: 0px;
+}
+.social-share {
+  text-align: left;
+}
+.social-icons {
+  margin-left: auto; /* Đẩy phần social-icons sang bên phải */
+  margin-right: 150px;
+}
+.social-icons__mobile {
+  display: none;
+}
+.author img {
+  margin-right: 10px;
+}
+
+.author-info h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 19.09px;
+  font-family: "SF Pro Display", sans-serif;
+}
+.author-info p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19.09px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.content1 h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin: 0; /* Đảm bảo không có margin khác */
+  font-weight: 400;
+  line-height: 34px;
+  font-family: "New York Medium", sans-serif;
+}
+.content1_mobile {
+  display: none;
+}
+.content1 p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin: 0; /* Đảm bảo đồng nhất với h2 */
+  font-weight: 400;
+  line-height: 34px;
+  font-family: "New York Medium", sans-serif;
+  text-align: left;
+}
+
+.content1 .one {
+  margin-top: 30px !important;
+}
+.content1 .two {
+  margin-top: 30px !important;
+}
+.content1 h3 {
+  font-family: "SF Pro Display";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  text-align: left;
+}
+.image-container img {
+  width: 854px;
+  height: 570px;
+  top: 2215px;
+  left: 293px;
+  gap: 0px;
+  opacity: 0px;
+}
+.image-container .caption_mobile {
+  display: none;
+}
+.img .hero3 {
+  text-align: center;
+  margin: 40px 0;
+  margin-top: 150px;
+  width: 100vw;
+}
+.hero3 img {
+  width: "1440px";
+  height: "900px";
+}
+.hero3 h2 {
+  font-family: "New York Extra Large", sans-serif;
+  font-size: 54px;
+  margin: 20px 0 10px;
+  width: 800px;
+  margin-left: 560px;
+}
+.hero3 p {
+  font-size: 20px;
+  color: #777;
+  font-family: "SF Mono", sans-serif;
+}
+.image-container img {
+  width: 854px;
+  height: 570px;
+  margin-top: 30px;
+}
+.image-container {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 22.4px;
+  text-align: center;
+}
+.image-container p {
+  font-family: "New York Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 34px;
+}
+.image-container ul li {
+  font-family: "New York Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 34px;
+}
+.social-share {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 640px;
+  height: 64px;
+}
+.social-share button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 70px;
+  width: 45%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+.social-share button img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.tags {
+  margin: 20px 0;
+  text-align: left;
+}
+.tags a {
+  color: #333;
+  margin-right: 10px;
+  font-family: "SF Pro Display", sans-serif;
+  text-decoration: underline; /* Gạch chân chữ */
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+.author img {
+  border-radius: 50%;
+  width: 71.25px;
+  height: 71.25px;
+}
+.author-info {
+  font-size: 14px;
+  margin-left: 5px;
+  margin-left: 4px;
+}
+.author-info strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.social-share_mobile {
+  display: none;
+}
+.social-icons {
+  /* background-color: #ffd900; */
+  width: 140px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+
+  margin-top: 10px;
+}
+.social-icons a {
+  flex: 1;
+  border: 1px solid #eaeaea;
+  height: 100%;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons a img {
+  width: 29.62px !important;
+  height: 16px !important;
+  margin-top: 5px;
+}
+.share_mobile {
+  display: none;
+}
+.divider {
+  width: 2px;
+  height: 80px;
+  background-color: #ddd;
+  margin: 0 10px;
+  border: 1px;
+  align-self: stretch;
+}
+.dividers {
+  display: flex;
+  align-items: center;
+}
+
+.dividers .eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: 82px;
+  height: 64.29px;
+}
+.dividers .eyes img {
+  width: 82px;
+  height: 64.29px;
+}
+.dividers .line {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #000000;
+  border: 2px;
+  width: 1440px;
+}
+.image-caption p {
+  font-family: "New York Medium";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+}
+.image-caption .one {
+  font-family: "New York Medium";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+}
+.caption_pc {
+  font-family: " New York Medium";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+}
+.caption_pc ul {
+  font-size: 20px;
+  margin-top: 20px;
+  margin: 0; /* Đảm bảo đồng nhất với h2 */
+  font-weight: 400;
+  line-height: 34px;
+  font-family: "New York Medium", sans-serif;
+  text-align: left;
+}
+.caption_pc p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin: 0; /* Đảm bảo đồng nhất với h2 */
+  font-weight: 400;
+  line-height: 34px;
+  font-family: "New York Medium", sans-serif;
+  text-align: left;
+}
+/* ảnh hàng 3 và signin */
+.containers {
+  width: 80%;
+  margin: 0 auto;
+}
+.containers h1 {
+  font-family: "New York Extra Large", sans-serif;
+  font-size: 66px;
+  line-height: 28px;
+  font-weight: 700px;
+  text-align: center;
+  margin-top: 40.07px;
+}
+h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 27px;
+}
+.grid-item {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+.grid-item p {
+  font-size: 1em;
+  margin: 10px 0 0;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 22px;
+  line-height: 26.5px;
+  font-weight: 500px;
+}
+.newsletter {
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 40px 0;
+  width: 640px;
+  height: 313px;
+  margin-top: 114px;
+  border-top-width: 12px; /* Đường viền trên đậm hơn */
+}
+.newsletter h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 28px;
+  font-family: "New York Extra Large", sans-serif;
+  text-align: center;
+  margin-top: 62px;
+}
+.newsletter p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "SF Pro Display", sans-serif;
+  line-height: 28px;
+  font-weight: 400px;
+  text-align: center;
+}
+.newsletter input[type="email"] {
+  width: 413px;
+  height: 54px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.newsletter button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 139px;
+  height: 54px;
+  margin-left: -10px; /* Khoảng cách giữa nút và ô input */
+}
+.dividers {
+  position: relative;
+  margin-top: 136px;
+}
+.dividers .line {
+  flex-grow: 0;
+  height: 4px;
+  background-color: black;
+  border: 2px;
+  width: 100vw;
+}
+.dividers .eyes {
+  position: absolute;
+  left: 50%;
+  transform: translate(-60%);
+}
+.dividers .eyes img {
+  width: 82px;
+  height: 64.29px;
+}
+
+.image-caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: center;
+}
+
+.tags {
+  text-align: left;
+
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.09px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.authors {
+  display: flex;
+  align-items: center;
+}
+.authors img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.author-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.author-info strong {
+  font-weight: bold;
+  text-align: left;
+}
+.author-info p {
+  margin: 0;
+  margin-left: 50px;
+}
+.author-info .auth {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+}
+.social-share button img {
+  margin-top: 6px;
+}
+hr {
+  background-color: black;
+  border: 3px;
+  margin-left: 500px;
+}
+.image-container img {
+  margin-left: -44px;
+}
+@media (max-width: 768px) {
+  .header {
+    font-size: 64px;
+    padding: 20px 40px;
+    height: 65px;
+  }
+  .version {
+    font-size: 18px;
+    padding-left: 40px;
+  }
+  .content {
+    padding: 40px;
+  }
+  .section-title {
+    font-size: 44px;
+    font-family: "New York Extra Large", sans-serif;
+    margin-top: 50px;
+  }
+  .section-content {
+    font-size: 20px;
+  }
+  .font-name {
+    font-size: 24px;
+  }
+  .font-description {
+    font-size: 18px;
+  }
+  /* |-----------------------
+    -| Listing
+    -|----------------------- 
+  */
+  header {
+    height: 65px;
+  }
+  header img {
+    width: 217px;
+  }
+  header h1 {
+    margin-left: 24px;
+  }
+  nav {
+    display: none;
+  }
+  header .img_nav__mobile {
+    display: block;
+    padding: 27px 40px 24px;
+    /* height: 60px; */
+  }
+  header .img_nav__mobile img {
+    width: 27px;
+  }
+  .hero {
+    width: 100vw;
+    margin-top: 123px;
+  }
+  .hero img {
+    width: 100vw;
+    height: 235px;
+  }
+  .hero h2 {
+    font-family: "New York Extra Large", sans-serif;
+    font-size: 36px;
+    margin: 20px 10px 24px;
+    width: 400px;
+    line-height: 42.96px;
+    text-align: center;
+    margin-left: 15px;
+  }
+  .hero p {
+    font-size: 20px;
+    color: black;
+    font-family: "SF Mono", sans-serif;
+    line-height: 29.2px;
+  }
+  hr {
+    border: none; /* Bỏ các đường viền mặc định */
+    height: 2px; /* Đặt độ dày cho đường gạch */
+    background-color: black; /* Màu sắc của đường gạch */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+    width: 100%;
+  }
+  .articles {
+    text-align: center;
+    margin: 40px 0;
+  }
+  .article-row {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px 0px;
+  }
+  .article {
+    width: 100vw;
+  }
+  .article img {
+    width: 335px;
+    height: 194px;
+    top: 836px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 42px;
+  }
+  /* |-----------------------
+    -| article
+    -|----------------------- 
+  */
+  .headers {
+    width: 375px;
+    height: 65px;
+  }
+  .heros {
+    width: 100vw;
+    margin-top: 123px;
+  }
+  .heros img {
+    width: 100vw;
+    height: 235px;
+    margin-left: 19px;
+  }
+  .heros h2 {
+    font-family: "New York Extra Large", sans-serif;
+    font-size: 36px;
+    margin: 20px 10px 24px;
+    width: 400px;
+    line-height: 42.96px;
+    text-align: center;
+    margin-left: 15px;
+  }
+  .heros p {
+    font-family: "SF Mono";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: center;
+  }
+  hr {
+    width: 90%;
+    margin: 25px auto -10px;
+  }
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .authors {
+    display: flex;
+
+    align-items: center;
+  }
+  .authors img {
+    border-radius: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    /* margin-right: 15px !important; */
+    margin-left: 10px !important;
+  }
+  .authors-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .author-info strong {
+    font-weight: bold;
+  }
+  .authors .author-info strong {
+    font-weight: bold;
+  }
+  .author-info p {
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.51px;
+    margin-left: 9px;
+  }
+  .authors .author-info p {
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.51px;
+    text-align: left;
+  }
+  .authors {
+  }
+  .author-info h2 {
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.51px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  .sub_author img {
+    width: 70px;
+    height: 70px;
+    margin-left: -127px;
+  }
+  .social-icons {
+    display: none;
+  }
+  .social-icons__mobile {
+    /* background-color: #ffd900; */
+    width: 335px !important;
+    height: 54px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-top: 30px;
+  }
+  .social-icons__mobile a {
+    border: 1px solid #eaeaea;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-icons__mobile a img {
+    width: 20px !important;
+    height: 20px !important;
+    margin-top: 5px;
+  }
+  .content1 {
+    display: none;
+  }
+  .content1_mobile {
+    display: block;
+  }
+  .content1_mobile p:nth-child(1) {
+    width: 350px;
+    /* color: red; */
+    font-family: "New York Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+    margin-left: 38px;
+  }
+  .content1_mobile h3 {
+    font-family: "SF Pro Display";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31.03px;
+    text-align: left;
+    margin-left: 38px;
+  }
+  .content1_mobile p:nth-child(3) {
+    width: 350px;
+    /* color: red; */
+    font-family: "New York Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+    margin-left: 38px;
+  }
+  .image-container img {
+    width: 375px;
+    height: 250px;
+    margin-left: 10px;
+  }
+
+  .image-container .image-caption {
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18.2px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .image-container .caption_pc {
+    display: none;
+  }
+  .image-container .caption_mobile {
+    display: block;
+  }
+  .image-container .caption_mobile p {
+    width: 350px;
+    margin-left: 38px;
+    font-family: "New York Medium";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    text-align: left;
+  }
+  .social-share {
+    display: none;
+  }
+  .social-share_mobile {
+    display: block;
+    width: 335px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 38px;
+    margin-top: 36px;
+  }
+  .social-share_mobile a {
+    border: 1px solid #eaeaea;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-share_mobile a img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+  }
+  .share_mobile {
+    display: block;
+    text-align: left;
+    margin-left: 38px;
+  }
+  .tags {
+    margin: 20px 0;
+    text-align: left;
+    margin-left: 38px;
+  }
+  .dot {
+    border-top: 2px dotted black;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .dividers {
+    position: relative;
+    margin-top: 50px;
+  }
+  .dividers .line {
+    flex-grow: 0;
+    height: 4px;
+    background-color: black;
+    border: 2px;
+    width: 100vw;
+  }
+  .dividers .eyes {
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%);
+  }
+  .dividers .eyes img {
+    width: 82px;
+    height: 64.29px;
+  }
+  .containers h1 {
+    font-family: N "ew York Extra Large";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.19px;
+    text-align: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    margin-top: 27px;
+  }
+  .grid-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .grid-item p {
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.4px;
+    text-align: center;
+  }
+  .grid-item img {
+    width: 335px;
+    height: 194px;
+    top: 3078px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .newsletter {
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 40px 0;
+    width: 100vw;
+    height: 313px;
+    margin-top: 114px;
+    border-top-width: 12px; /* Đường viền trên đậm hơn */
+    margin-left: -45px;
+  }
+  .newsletter h2 {
+    font-family: "New York Extra Large";
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    width: 350px;
+    margin: 30px 20px 10px;
+  }
+  .newsletter p {
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    width: 250px;
+    margin-left: 68px;
+  }
+  .newsletter input[type="email"] {
+    width: 150px;
+    height: 44px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin-left: 50px;
+  }
+  .newsletter button {
+    width: 108px;
+    height: 64px;
+    top: 3675px;
+    left: 233px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    margin-right: -35px;
+  }
+}
