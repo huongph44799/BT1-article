@@ -8,6 +8,11 @@
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 @import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
 @import url("https://fonts.cdnfonts.com/css/gurnie");
+
+/* * {
+  border: 1px solid red;
+} */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -17,18 +22,31 @@ body {
 
 /* listing */
 header {
-  position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: white; /* Đảm bảo nền header không bị lẫn với nội dung bên dưới */
-  z-index: 1000; /* Đảm bảo header nằm trên các thành phần khác */
+  background-color: white;
+  z-index: 1000;
   padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Đẩy `nav` sang bên phải */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ nếu cần */
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(110, 109, 109, 0.1);
   height: 134px;
+}
+
+header nav a {
+  position: relative;
+}
+header nav .focus::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -42px;
+  width: 66px;
+  height: 2px;
+  background-color: #000;
 }
 
 header .img_nav__mobile {
@@ -48,6 +66,10 @@ nav a {
   padding: 10px 0px;
   font-family: "Gurnie", sans-serif;
 }
+header nav a {
+  font-size: 20px;
+}
+
 .hero {
   text-align: center;
   margin: 40px 0;
@@ -94,17 +116,17 @@ nav a {
   margin-bottom: 20px;
 }
 .article {
-  width: 48%; /* Giữ độ rộng là 48% */
+  width: 48%;
   text-align: center;
-  margin-right: 1%; /* Thêm khoảng cách giữa các ảnh */
+  margin-right: 1%;
   margin-top: -36px;
 }
 .article:last-child {
-  margin-right: 0; /* Bỏ khoảng cách bên phải cho ảnh cuối cùng */
+  margin-right: 0;
 }
 .article img {
-  width: 304px; /* Đặt chiều rộng ảnh là 100% */
-  height: 176px; /* Chiều cao tự động để giữ tỉ lệ */
+  width: 304px;
+  height: 176px;
   object-fit: cover;
   margin-left: 20px;
   margin-top: 78px;
@@ -124,7 +146,13 @@ footer {
 }
 footer p {
   margin: 5px 0;
-  margin-top: 64px;
+
+  margin-top: 18px;
+}
+.fto {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
 }
 footer h5 {
   margin-top: 50px;
@@ -136,24 +164,20 @@ footer a {
   margin: 0 10px;
 }
 hr {
-  border: none; /* Bỏ các đường viền mặc định */
-  height: 2px; /* Đặt độ dày cho đường gạch */
-  background-color: black; /* Màu sắc của đường gạch */
-  margin: 20px 0; /* Khoảng cách trên và dưới */
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
   width: 100%;
 }
 .light {
-  color: gray; /* Màu nhạt cho chữ */
-  font-weight: normal; /* Chữ không đậm */
+  color: gray;
+  font-weight: normal;
   margin-left: 20px;
 }
 
 .bold {
-  font-weight: bold; /* Chữ đậm */
-}
-nav a:first-child {
-  border-bottom: 2px solid #333; /* Thêm gạch chân dưới `BLOG` */
-  padding-bottom: 5px; /* Thêm khoảng cách giữa chữ và gạch chân */
+  font-weight: bold;
 }
 
 .social-links {
@@ -162,11 +186,11 @@ nav a:first-child {
 }
 
 .social-links span {
-  text-decoration: underline; /* Gạch chân từng chữ */
+  text-decoration: underline;
 }
 
 .social-links span + span {
-  margin-left: 5px; /* Tạo khoảng cách giữa các chữ nếu cần */
+  margin-left: 5px;
 }
 
 /* article */
@@ -478,7 +502,7 @@ nav a:first-child {
 .caption_pc ul {
   font-size: 20px;
   margin-top: 20px;
-  margin: 0; /* Đảm bảo đồng nhất với h2 */
+  margin: 0;
   font-weight: 400;
   line-height: 34px;
   font-family: "New York Medium", sans-serif;
@@ -487,7 +511,7 @@ nav a:first-child {
 .caption_pc p {
   font-size: 20px;
   margin-top: 20px;
-  margin: 0; /* Đảm bảo đồng nhất với h2 */
+  margin: 0;
   font-weight: 400;
   line-height: 34px;
   font-family: "New York Medium", sans-serif;
@@ -531,6 +555,9 @@ h1 {
   font-size: 22px;
   line-height: 26.5px;
   font-weight: 500px;
+  width: 80%;
+  text-align: center;
+  margin-left: 33px;
 }
 .newsletter {
   border: 1px solid #000;
@@ -540,7 +567,7 @@ h1 {
   width: 640px;
   height: 313px;
   margin-top: 114px;
-  border-top-width: 12px; /* Đường viền trên đậm hơn */
+  border-top-width: 12px;
 }
 .newsletter h2 {
   font-size: 36px;
@@ -575,7 +602,7 @@ h1 {
   cursor: pointer;
   width: 139px;
   height: 54px;
-  margin-left: -10px; /* Khoảng cách giữa nút và ô input */
+  margin-left: -10px;
 }
 .dividers {
   position: relative;
@@ -666,7 +693,9 @@ hr {
   width: 100%;
   margin-bottom: 32px;
 }
-
+header img {
+  margin-left: 63.3px;
+}
 @media (max-width: 768px) {
   .header {
     font-size: 64px;
@@ -745,10 +774,10 @@ hr {
     line-height: 29.2px;
   }
   hr {
-    border: none; /* Bỏ các đường viền mặc định */
-    height: 2px; /* Đặt độ dày cho đường gạch */
-    background-color: black; /* Màu sắc của đường gạch */
-    margin: 20px 0; /* Khoảng cách trên và dưới */
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
     width: 100%;
   }
   .articles {
@@ -1042,6 +1071,8 @@ hr {
     margin-bottom: 20px;
   }
   .grid-item p {
+    margin-left: 57px;
+    margin-right: 56px;
     font-family: "SF Pro Display";
     font-size: 22px;
     font-weight: 500;
@@ -1052,7 +1083,7 @@ hr {
     width: 335px;
     height: 194px;
     top: 3078px;
-    margin-left: 79px;
+    margin-left: 27px;
   }
   .newsletter {
     border: 1px solid #000;
